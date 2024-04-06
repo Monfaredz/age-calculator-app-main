@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="input-flex">
+        <div class="input">
+          <label for="age" class="label-day">D A Y</label>
+          <input type="number" class="day" id="day" placeholder="DD">
+          <p class="error-day"></p>
+        </div>
+        <div class="input">
+          <label for="age" class="label-month">M O N T H</label>
+          <input type="number" class="month" id="month" placeholder="MM">
+          <p class="error"></p>
+        </div>
+
+        <div class="input">
+          <label for="age" class="label-year">Y E A R</label>
+          <input type="number" class="year" id="year" placeholder="YY">
+          <p class="error-year"></p>
+        </div>
+        <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg></button>
+      </div>
+
+      <div class="outputs">
+        <div class="output-year">--</div>
+        <div class="output-label">
+          <h1>yaers</h1>
+        </div>
+        <br>
+        <div class="output-month">--</div>
+        <div class="output-label">
+          <h1>months</h1>
+        </div>
+        <br>
+        <div class="output-day">--</div>
+        <div class="output-label">
+          <h1>days</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
