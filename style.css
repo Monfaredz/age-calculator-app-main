@@ -41,18 +41,20 @@ body {
 }
 
 .container {
-    background-color: gray;
+    background-color: rgb(218, 218, 218);
     margin: auto;
-    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 110vh;
-    padding: 50px 200px;
+    /* padding: 50px 0px; */
 }
 
 .box {
     border-radius: 10px 10px 300px 10px;
-    max-width: 800px;
+    width: 650px;
     background-color: white;
-    height: 600px;
+    height: 500px;
     padding: 30px 60px;
 }
 
@@ -66,7 +68,7 @@ body {
 .input-flex {
     display: flex;
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     height: 150px;
     border-bottom: 3px solid var(--purple);
     position: relative;
@@ -83,17 +85,17 @@ body {
     cursor: pointer;
     position: absolute;
     top: 94px;
-    left: 600px;
+    left: 470px;
 }
 
 h1 {
     color: hsl(0, 0%, 8%);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .outputs>* {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: extrabolditalic;
 }
 
@@ -112,9 +114,7 @@ input {
     outline: none;
 }
 
-.black {
-    background-color: black;
-}
+
 
 input:focus {
     border: 3px solid var(--purple);
@@ -134,4 +134,35 @@ input:focus {
 
 .hidden {
     display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        width: 400px;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        left: 100px;
+        top: 120px;
+        width: 60px;
+        height: 60px;
+    }
+
+    svg {
+        width: 30px;
+    }
+
+    .input-flex {
+        gap: 30px;
+    }
+
+    input {
+        width: 80px;
+    }
+
 }
